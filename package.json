@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://maisamaximo.github.io/bumblebee-landing"
+  "homepage": "https://maisamaximo.github.io/bumblebee-landing",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
