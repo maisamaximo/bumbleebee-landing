@@ -56,5 +56,30 @@
     "meta": {
     "title": "Bumblebee — Campervan",
     "description": "Compacte, douce et prête à prendre la route."
+  },
+   "about": {
+    "overline": "À propos",
+    "title": "NOUVELLE EXPÉRIENCE VAN À MADÈRE 🐝",
+    "intro": [
+      "Salut les aventuriers ! Je suis Bumblebee, la van la plus cool de Madère."
+    ],
+    "paragraphs": [
+      "Née en France, toute jaune, je livrais le courrier comme une cheffe — pluie ou soleil, toujours à l’heure.",
+      "Mais la vie en a décidé autrement… En 2023, deux amis voyageurs m’ont offert une seconde vie. Fini les colis, bonjour l’aventure !",
+      "Ils m’ont transformée en camper chaleureux — pas seulement pour rouler, mais pour vivre l’île de la meilleure manière.",
+      "Je ne suis pas une voiture à louer et oublier. Je suis ta compagne de route, ta petite maison sur roues, ton billet pour la liberté. Je viens avec un roadbook rempli d’itinéraires, d’astuces secrètes et de coins introuvables seul·e.",
+      "À l’intérieur : confort partout — lit moelleux, cuisine dedans/dehors, eau fraîche, lumières d’ambiance et même une douche. À l’extérieur : table, chaises et vues dignes d’une carte postale.",
+      "Côté énergie ? J’en ai à revendre : panneau solaire, batterie, USB et prises 220V. Cuisiner, chiller, recharger et dormir au bord d’une falaise — aucun souci."
+    ],
+    "extras": {
+      "title": "Les petits plus qui rendent la vie douce :",
+      "items": [
+        "Soirées cinéma avec projecteur",
+        "Une Polaroid pour capturer vos sourires sauvages",
+        "Paddle, surf ou kayak pour les âmes salées",
+        "Transferts aéroport pour un voyage sans stress"
+      ]
+    },
+    "outro": "Voilà pourquoi on m’appelle Bumblebee. Prêt·e à prendre la route ? Faisons de Madère ton histoire. 🚐✨🐝"
   }
 }

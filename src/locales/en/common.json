@@ -56,5 +56,30 @@
   "meta": {
     "title": "Bumblebee — Campervan",
     "description": "Compact, sweet, and ready for the road."
+  },
+    "about": {
+    "overline": "About us",
+    "title": "NEW VAN EXPERIENCE IN MADEIRA 🐝",
+    "intro": [
+      "Hey adventurers! I’m Bumblebee, the coolest van in Madeira."
+    ],
+    "paragraphs": [
+      "Born in France in bright yellow, I used to deliver mail like a champ — rain or shine, always on time.",
+      "But life had other plans… In 2023, two friends with itchy feet gave me a second life. No more parcels, hello adventures!",
+      "They transformed me into a cozy camper — not just for driving, but for living the island in the best possible way.",
+      "I’m not a car to rent and forget. I’m your travel buddy, your little home on wheels, your ticket to freedom. I come with a roadbook full of itineraries, secret tips, and spots you wouldn’t find on your own.",
+      "Inside: comfort everywhere — a cloud-soft bed, indoor/outdoor kitchen, fresh water, ambient lights and yes, even a shower. Outside: table, chairs and views that make postcards jealous.",
+      "And power? I’ve got plenty: solar panel, battery, USB and 220V outlets. Cook, chill, charge and sleep on a cliff — no problem."
+    ],
+    "extras": {
+      "title": "The extras that make life sweet:",
+      "items": [
+        "Movie nights with a projector",
+        "A Polaroid to capture your wild smiles",
+        "Paddleboard, surfboard, or kayak for salty souls",
+        "Airport transfers for stress-free start and finish"
+      ]
+    },
+    "outro": "Now you know why they named me Bumblebee — ready to roll into adventure? Let’s make Madeira your story. 🚐✨🐝"
   }
 }

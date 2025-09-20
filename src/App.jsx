@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 // IMPORTS dos seus componentes (sem alterar nada neles)
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import About from './components/About'; 
 import Features from './components/Features';
 import Packages from './components/Packages';
 import Gallery from './components/Gallery';
@@ -41,6 +42,7 @@ export default function App(){
       <main>
         <Seo />
         <Hero />
+        <About /> 
         <Features />
         <Packages />
         <Gallery />
