@@ -1,0 +1,60 @@
+{
+  "footer": {
+    "links": { "about": "Sobre", "layouts": "Layouts", "gallery": "Galeria"},
+    "note": "linha fina com rgba(239,172,0,.3)",
+    "copyrightTemplate": "© {{year}} {{brand}} — {{note}}"
+  },
+  "nav": {
+    "about": "Sobre",
+    "layouts": "Layouts",
+    "gallery": "Galeria",
+    "reserve": "Reservar",
+    "language": "Idioma",
+    "openMenu": "Abrir menu",
+    "closeMenu": "Fechar menu"
+  },
+    "testimonials": {
+    "title": "Quem já foi, recomenda",
+    "items": [
+      { "name": "Marina S.", "city": "Curitiba", "quote": "Pequena por fora, enorme por dentro. Experiência doce mesmo!", "stars": 5 },
+      { "name": "Otávio R.", "city": "Florianópolis", "quote": "O layout em favo é genial. Tudo no lugar certinho.", "stars": 5 },
+      { "name": "Letícia P.", "city": "São Paulo", "quote": "Atendimento que acompanha a viagem inteira.", "stars": 5 }
+    ],
+    "fallback": {
+      "name": "Cliente",
+      "city": "Sua cidade",
+      "quote": "Em breve, depoimentos reais por aqui."
+    }
+  },
+    "hero": {
+    "overline": "Por que escolher a Bumblebee?",
+    "title": "Campervan compacta, doce e pronta pra estrada.",
+    "subtitle": "Espaço otimizado, conforto artesanal e autonomia para você viajar leve.",
+    "ctaPrimary": "Quero reservar",
+    "ctaSecondary": "Conhecer a Bumblebee",
+    "imagePlaceholder": "Imagem da Bumblebee"
+  },
+    "gallery": {
+    "title": "Galeria",
+    "subtitle": "Sem fotos ainda? Use estes placeholders e troque depois."
+  },
+    "finalCta": {
+    "title": "Pronto para partir?",
+    "subtitle": "Reserve sua data e a gente cuida do resto.",
+    "button": "Reservar minha data"
+  },
+    "features": {
+    "overline": "Por que a Bumblebee?",
+    "title": "Compacta, inteligente, pronta.",
+    "items": [
+      { "title": "Layout “favo” eficiente", "desc": "Planta inteligente que aproveita cada centímetro." },
+      { "title": "Autonomia doce", "desc": "Energia, água e cozimento pensados pra viajar leve." },
+      { "title": "Acabamento artesanal", "desc": "Materiais quentes e feitos à mão." },
+      { "title": "Suporte que não some", "desc": "A gente te acompanha antes, durante e depois." }
+    ]
+  },
+    "meta": {
+    "title": "Bumblebee — Campervan",
+    "description": "Campervan compacta, doce e pronta pra estrada."
+  }
+}

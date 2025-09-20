@@ -58,18 +58,78 @@ section{ padding:72px 0; }
   background: rgba(252,243,230,.9);
   backdrop-filter: blur(8px);
   border-bottom:1px solid rgba(239,172,0,.25);
-  transition: box-shadow .2s ease;
+  transition: box-shadow .2s ease, border-color .2s ease, background .2s ease;
 }
 .nav.scrolled{ box-shadow: var(--shadow); }
+
 .nav-inner{
   display:flex; align-items:center; justify-content:space-between;
   gap:16px; padding:12px 0;
 }
+
 .nav-left{ display:flex; align-items:center; gap:14px; }
+
 .logo{
   font-weight:900; letter-spacing:.02em; font-size:20px;
 }
 .logo .bee{ color: var(--honey); }
+
+/* — direita (links + reservar + seletor) — */
+.nav-right{ display:flex; align-items:center; gap:12px; }
+
+.nav-menu{ display:flex; align-items:center; gap:16px; }
+
+/* links padrão da nav: sem outline ao focar (exceto Reservar e seletor) */
+.nav-menu .nav-link{
+  border:1px solid transparent; border-radius:12px;
+  height:44px; display:inline-flex; align-items:center; padding:0 12px;
+}
+.nav-menu .nav-link:focus,
+.nav-menu .nav-link:focus-visible{ outline:none; box-shadow:none; }
+
+/* botão Reservar mantém foco visível e acessível */
+.nav-menu .reserve-btn{
+  background:var(--honey); color:#1f1400; border:1px solid transparent;
+  box-shadow: 0 6px 16px rgba(239,172,0,.35);
+}
+.nav-menu .reserve-btn:hover{ transform: translateY(-1px); }
+.nav-menu .reserve-btn:focus-visible{
+  outline: 2px solid transparent;
+  box-shadow: 0 0 0 3px rgba(239,172,0,.55), 0 6px 16px rgba(239,172,0,.35);
+}
+
+/* — seletor de idioma — */
+.lang{ position:relative; }
+.lang-toggle{
+  display:inline-flex; align-items:center; gap:8px;
+  height:44px; padding:0 12px; border-radius:12px;
+  border:1px solid rgba(0,0,0,.1);
+  background:#fff; cursor:pointer; font-weight:600;
+  outline:none; transition: box-shadow .2s ease, transform .2s ease;
+}
+.lang-toggle:hover{ box-shadow: var(--shadow); }
+.lang-toggle:focus{ outline:none; }
+.lang-toggle:focus-visible{ box-shadow: 0 0 0 3px rgba(239,172,0,.45); }
+.lang-toggle .flag{ font-size:16px; line-height:1; }
+.lang-toggle .lang-code{ font-variant: all-small-caps; letter-spacing:.04em; }
+.lang-toggle .chev{ opacity:.6; }
+
+.lang-menu{
+  position:absolute; top:calc(100% + 8px); right:0; min-width:190px;
+  background:#fff; border:1px solid #00000014;
+  border-radius:12px; box-shadow:var(--shadow);
+  padding:6px; margin:0; list-style:none; display:none; z-index:60;
+}
+.lang-menu.open{ display:block; }
+
+.lang-item{
+  width:100%; display:flex; align-items:center; gap:10px;
+  padding:10px; border-radius:10px; border:0; background:transparent;
+  cursor:pointer; outline:none; font:inherit; text-align:left;
+}
+.lang-item:hover{ background:#00000008; }
+.lang-item:focus-visible{ box-shadow: 0 0 0 3px rgba(239,172,0,.35); }
+.lang-item.active{ background:#FFF7E3; }
 
 /* hero */
 .hero{
@@ -142,14 +202,6 @@ section{ padding:72px 0; }
 .testis .card p{ margin:8px 0 0; opacity:.9; }
 @media (max-width:900px){ .testis{ grid-template-columns:1fr; } }
 
-/* contact */
-form{ display:grid; gap:12px; }
-input, textarea{
-  width:100%; border:1px solid #00000020; background:#fff; border-radius:12px;
-  padding:12px 14px; font:inherit;
-}
-textarea{ min-height:120px; resize:vertical; }
-
 /* footer */
 footer{ padding:36px 0; border-top:1px solid rgba(239,172,0,.3); }
 .footer-grid{ display:grid; grid-template-columns:1fr auto auto; gap:18px; align-items:center; }
@@ -157,3 +209,109 @@ footer{ padding:36px 0; border-top:1px solid rgba(239,172,0,.3); }
 
 /* small helpers */
 .hr{ height:1px; background:rgba(239,172,0,.25); margin:32px 0; border:0; }
+
+/* =========================================================
+   AJUSTES MOBILE / RESPONSIVO
+   Cole AO FINAL do seu CSS atual
+   ======================================================= */
+
+@media (max-width: 900px){
+  section{ padding:56px 0; }
+  .nav-inner{ padding:10px 0; }
+  .hero{ padding:72px 0 56px; }
+  .hero-cta .btn{ height:46px; padding:0 18px; }
+}
+@media (max-width: 680px){
+  html{ font-size: 15px; } /* reduz base */
+  h1{ font-size: clamp(28px, 8vw, 36px); }
+  h2{ font-size: clamp(22px, 6.5vw, 28px); }
+  .container{ width: min(1040px, 92vw); } /* mantém respiro lateral */
+  section{ padding:48px 0; }
+  .hero{ padding:64px 0 48px; }
+  .btn{ height:46px; padding:0 16px; border-radius:10px; }
+}
+
+.nav-toggle{ display:none; }
+@media (max-width: 760px){
+  .logo{ font-size:18px; }
+  .nav-right{ gap:8px; }
+  .nav-toggle{
+    display:inline-flex; align-items:center; justify-content:center;
+    width:40px; height:40px; border-radius:10px; border:1px solid #00000020;
+    background:#fff; cursor:pointer;
+  }
+  .nav-menu{
+    position:absolute; top:100%; right:0; left:0;
+    display:grid; gap:8px;
+    background: rgba(252,243,230,.98);
+    border-bottom:1px solid rgba(239,172,0,.25);
+    padding:12px; transform-origin: top;
+    transform: scaleY(0); opacity:0; pointer-events:none;
+    transition: transform .18s ease, opacity .18s ease;
+  }
+  .nav.open .nav-menu{ transform: scaleY(1); opacity:1; pointer-events:auto; }
+}
+
+/* Hero: grid empilha e imagem não domina tudo */
+@media (max-width: 900px){
+  .hero-grid{ grid-template-columns:1fr; gap:20px; }
+  .hero img{ max-height: 52vh; object-fit: cover; }
+}
+
+/* Células de mel: menores e menos intrusivas */
+@media (max-width: 900px){
+  .honey .honey-cell{ width:18px; height:18px; opacity:.22; }
+}
+@media (max-width: 560px){
+  .honey .honey-cell{ width:14px; height:14px; opacity:.18; }
+}
+
+/* Features: já tem quebra, só ajusta gap */
+@media (max-width: 900px){ .features{ gap:14px; } }
+@media (max-width: 560px){ .features{ gap:12px; } }
+
+/* Pacotes: 3 -> 2 -> 1 colunas */
+@media (max-width: 1000px){
+  .pack-cards{ grid-template-columns: repeat(2, 1fr); gap:14px; }
+}
+@media (max-width: 680px){
+  .pack-cards{ grid-template-columns: 1fr; gap:12px; }
+  .pack-ul{ gap:6px; }
+}
+
+/* Galeria: 2 colunas no mobile; 1 no mini; remove :hover zoom em touch */
+@media (hover: none){
+  .gallery .ph:hover{ transform:none; box-shadow:none; }
+}
+@media (max-width: 680px){
+  .gallery{ grid-template-columns: repeat(2, 1fr); gap:10px; }
+}
+@media (max-width: 420px){
+  .gallery{ grid-template-columns: 1fr; }
+}
+
+/* Depoimentos: card mais “alto” e legível no mobile */
+@media (max-width: 900px){
+  .testis .card p{ font-size: .95rem; }
+}
+
+/* Formulário: inputs mais fáceis de tocar */
+@media (max-width: 680px){
+  input, textarea{ padding:12px 12px; border-radius:10px; }
+  textarea{ min-height: 110px; }
+}
+
+/* Footer: já quebra; só aumenta respiro entre grupos no mobile pequeno */
+@media (max-width: 560px){
+  .footer-grid{ gap:12px; }
+}
+
+/* Sombra da navbar ao rolar (já existe a classe .scrolled no JS) */
+@media (max-width: 760px){
+  .nav{ border-bottom-color: rgba(239,172,0,.2); }
+}
+
+/* Acessibilidade: reduz animações para quem prefere */
+@media (prefers-reduced-motion: reduce){
+  *{ animation: none !important; transition: none !important; }
+}

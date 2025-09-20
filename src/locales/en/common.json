@@ -1,0 +1,60 @@
+{
+  "footer": {
+    "links": { "about": "About", "layouts": "Layouts", "gallery": "Gallery" },
+    "note": "fine line with rgba(239,172,0,.3)",
+    "copyrightTemplate": "© {{year}} {{brand}} — {{note}}"
+  },
+  "nav": {
+    "about": "About",
+    "layouts": "Layouts",
+    "gallery": "Gallery",
+    "reserve": "Reserve",
+    "language": "Language",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "testimonials": {
+    "title": "Travelers recommend",
+    "items": [
+      { "name": "Marina S.", "city": "Curitiba", "quote": "Small outside, huge inside. Truly a sweet experience!", "stars": 5 },
+      { "name": "Otávio R.", "city": "Florianópolis", "quote": "The honeycomb layout is brilliant. Everything in its place.", "stars": 5 },
+      { "name": "Letícia P.", "city": "São Paulo", "quote": "Support that follows the entire trip.", "stars": 5 }
+    ],
+    "fallback": {
+      "name": "Customer",
+      "city": "Your city",
+      "quote": "Soon, real testimonials will appear here."
+    }
+  },
+  "hero": {
+    "overline": "Why choose Bumblebee?",
+    "title": "Compact campervan, sweet and road-ready.",
+    "subtitle": "Optimized space, handcrafted comfort, and autonomy for light travel.",
+    "ctaPrimary": "I want to reserve",
+    "ctaSecondary": "Discover Bumblebee",
+    "imagePlaceholder": "Bumblebee image"
+  },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "No photos yet? Use these placeholders and replace them later."
+  },
+  "finalCta": {
+    "title": "Ready to hit the road?",
+    "subtitle": "Book your date and we’ll take care of the rest.",
+    "button": "Book my date"
+  },
+  "features": {
+    "overline": "Why Bumblebee?",
+    "title": "Compact, clever, ready.",
+    "items": [
+      { "title": "Efficient honeycomb layout", "desc": "Smart floor plan that makes use of every centimeter." },
+      { "title": "Sweet autonomy", "desc": "Energy, water, and cooking designed for light travel." },
+      { "title": "Crafted finish", "desc": "Warm, hand-made materials." },
+      { "title": "Support that lasts", "desc": "We’ll be with you before, during, and after." }
+    ]
+  },
+  "meta": {
+    "title": "Bumblebee — Campervan",
+    "description": "Compact, sweet, and ready for the road."
+  }
+}

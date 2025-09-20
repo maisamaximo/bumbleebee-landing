@@ -1,0 +1,60 @@
+{
+  "footer": {
+    "links": { "about": "Über uns", "layouts": "Layouts", "gallery": "Galerie" },
+    "note": "feine Linie mit rgba(239,172,0,.3)",
+    "copyrightTemplate": "© {{year}} {{brand}} — {{note}}"
+  },
+  "nav": {
+    "about": "Über uns",
+    "layouts": "Layouts",
+    "gallery": "Galerie",
+    "reserve": "Reservieren",
+    "language": "Sprache",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen"
+  },
+  "testimonials": {
+    "title": "Reisende empfehlen",
+    "items": [
+      { "name": "Marina S.", "city": "Curitiba", "quote": "Außen klein, innen riesig. Eine wirklich süße Erfahrung!", "stars": 5 },
+      { "name": "Otávio R.", "city": "Florianópolis", "quote": "Das Waben-Layout ist genial. Alles am richtigen Platz.", "stars": 5 },
+      { "name": "Letícia P.", "city": "São Paulo", "quote": "Support, der die ganze Reise über da ist.", "stars": 5 }
+    ],
+    "fallback": {
+      "name": "Kunde",
+      "city": "Ihre Stadt",
+      "quote": "Bald erscheinen hier echte Erfahrungsberichte."
+    }
+  },
+  "hero": {
+    "overline": "Warum Bumblebee wählen?",
+    "title": "Kompakter Campervan, süß und bereit für die Straße.",
+    "subtitle": "Optimierter Raum, handgefertigter Komfort und Autonomie für leichtes Reisen.",
+    "ctaPrimary": "Ich möchte reservieren",
+    "ctaSecondary": "Bumblebee entdecken",
+    "imagePlaceholder": "Bumblebee-Bild"
+  },
+  "gallery": {
+    "title": "Galerie",
+    "subtitle": "Noch keine Fotos? Verwenden Sie diese Platzhalter und ersetzen Sie sie später."
+  },
+  "finalCta": {
+    "title": "Bereit zum Aufbruch?",
+    "subtitle": "Buchen Sie Ihr Datum und wir kümmern uns um den Rest.",
+    "button": "Mein Datum reservieren"
+  },
+  "features": {
+    "overline": "Warum Bumblebee?",
+    "title": "Kompakt, clever, bereit.",
+    "items": [
+      { "title": "Effizientes Waben-Layout", "desc": "Ein intelligenter Grundriss, der jeden Zentimeter nutzt." },
+      { "title": "Süße Autonomie", "desc": "Energie, Wasser und Kochen – für leichtes Reisen durchdacht." },
+      { "title": "Handwerkliche Verarbeitung", "desc": "Warme, handgemachte Materialien." },
+      { "title": "Support, der bleibt", "desc": "Wir begleiten Sie vor, während und nach der Reise." }
+    ]
+  },
+    "meta": {
+    "title": "Bumblebee — Campervan",
+    "description": "Kompakt, süß und bereit für die Straße."
+  }
+}

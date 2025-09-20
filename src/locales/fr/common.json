@@ -1,0 +1,60 @@
+{
+  "footer": {
+    "links": { "about": "À propos", "layouts": "Aménagements", "gallery": "Galerie" },
+    "note": "ligne fine avec rgba(239,172,0,.3)",
+    "copyrightTemplate": "© {{year}} {{brand}} — {{note}}"
+  },
+  "nav": {
+    "about": "À propos",
+    "layouts": "Aménagements",
+    "gallery": "Galerie",
+    "reserve": "Réserver",
+    "language": "Langue",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu"
+  },
+  "testimonials": {
+    "title": "Ils recommandent",
+    "items": [
+      { "name": "Marina S.", "city": "Curitiba", "quote": "Petite dehors, immense dedans. Une expérience vraiment douce !", "stars": 5 },
+      { "name": "Otávio R.", "city": "Florianópolis", "quote": "Le design en alvéoles est génial. Tout à sa place.", "stars": 5 },
+      { "name": "Letícia P.", "city": "São Paulo", "quote": "Un accompagnement présent tout au long du voyage.", "stars": 5 }
+    ],
+    "fallback": {
+      "name": "Client",
+      "city": "Votre ville",
+      "quote": "Bientôt, de vrais témoignages ici."
+    }
+  },
+  "hero": {
+    "overline": "Pourquoi choisir Bumblebee ?",
+    "title": "Campervan compacte, douce et prête à prendre la route.",
+    "subtitle": "Espace optimisé, confort artisanal et autonomie pour voyager léger.",
+    "ctaPrimary": "Je veux réserver",
+    "ctaSecondary": "Découvrir Bumblebee",
+    "imagePlaceholder": "Image de Bumblebee"
+  },
+  "gallery": {
+    "title": "Galerie",
+    "subtitle": "Pas encore de photos ? Utilisez ces espaces réservés et remplacez-les plus tard."
+  },
+  "finalCta": {
+    "title": "Prêt à partir ?",
+    "subtitle": "Réservez votre date et nous nous occupons du reste.",
+    "button": "Réserver ma date"
+  },
+  "features": {
+    "overline": "Pourquoi Bumblebee ?",
+    "title": "Compacte, ingénieuse, prête.",
+    "items": [
+      { "title": "Aménagement en alvéoles efficace", "desc": "Un plan intelligent qui utilise chaque centimètre." },
+      { "title": "Douce autonomie", "desc": "Énergie, eau et cuisson pensés pour voyager léger." },
+      { "title": "Finition artisanale", "desc": "Matériaux chaleureux et faits à la main." },
+      { "title": "Un support qui dure", "desc": "Nous vous accompagnons avant, pendant et après." }
+    ]
+  },
+    "meta": {
+    "title": "Bumblebee — Campervan",
+    "description": "Compacte, douce et prête à prendre la route."
+  }
+}
